@@ -1,0 +1,225 @@
+Match (a:Player {Name:"Cristiano Ronaldo"}), (b:Country {Title:"Portugal"}) Merge (a)-[r:From]->(b)
+Match (a:Player {Name:"Philippe Coutinho"}), (b:Country {Title:"Brazil"}) Merge (a)-[r:From]->(b)
+
+
+
+
+Match (a:Country {Title:"England"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Top_Level]->(b)
+Match (a:Country {Title:"Spain"}), (b:League {Title:"La Liga"}) Merge (a)-[r:Top_Level]->(b)
+Match (a:Country {Title:"Germany"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Top_Level]->(b)
+Match (a:Country {Title:"Italy"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Top_Level]->(b)
+Match (a:Country {Title:"France"}), (b:League {Title:"Ligue 1"}) Merge (a)-[r:Top_Level]->(b)
+
+
+
+
+CREATE (AntoineGriezmann: Player {Name: 'Antoine Griezmann', DoB: '21-03-1991', position: 'Forward'})
+
+CREATE (AtleticoMadrid: Football_Team {City: 'Madrid', Colour: 'Red & White', Team_Name: 'Atletico Madrid', founded : 1903})
+
+
+
+
+CREATING PLAYERS
+CREATE (Pogba: Player {Name: 'Paul Pogba', DoB: '15-03-1993', position: 'Midfielder'})
+CREATE (Mbappe: Player {Name: 'Kylian Mbappe', DoB: '20-12-1998', position: 'Winger'})
+CREATE (DeBruyne: Player {Name: 'Kevin De Bruyne', DoB: '28-06-1991', position: 'Midfielder'})
+CREATE (Silva: Player {Name: 'David Silva', DoB: '08-01-1986', position: 'Midfielder'})
+CREATE (Modric: Player {Name: 'Luka Modric', DoB: '09-09-1985', position: 'Midfielder'})
+CREATE (Marcelo: Player {Name: 'Marcelo', DoB: '12-05-1988', position: 'Left Back'})
+CREATE (Sane: Player {Name: 'Leroy Sane', DoB: '11-01-1996', position: 'Winger'})
+CREATE (Sterling: Player {Name: 'Raheem Sterling', DoB: '08-12-1994', position: 'Winger'})
+CREATE (Kroos: Player {Name: 'Toni Kroos', DoB: '04-01-1990', position: 'Midfielder'})
+CREATE (Vidal: Player {Name: 'Arturo Vidal', DoB: '22-05-1987', position: 'Midfielder'})
+CREATE (Sancho: Player {Name: 'Jadon Sancho', DoB: '25-03-2000', position: 'Winger'})
+CREATE (Salah: Player {Name: 'Mohamed Salah', DoB: '1506-1992', position: 'Winger'})
+CREATE (Mane: Player {Name: 'Sadio Mane', DoB: '10-04-1992', position: 'Winger'})
+CREATE (Rashford: Player {Name: 'Marcus Rashford', DoB: '31-10-1997', position: 'Forward'})
+CREATE (Boateng: Player {Name: 'Jerome Boateng', DoB: '03-09-1988', position: 'Centre Back'})
+CREATE (Zapata: Player {Name: 'Cristian Zapata', DoB: '30-09-1986', position: 'Centre Back'})
+CREATE (Higuain: Player {Name: 'Gonzalo Higuain', DoB: '10-12-1987', position: 'Striker'})
+CREATE (Perisic: Player {Name: 'Ivan Perisic', DoB: '02-02-1989', position: 'Winger'})
+
+CREATE (Alonso: Player {Name: 'Marcos Alonso', DoB: '28-12-1990', position: 'Left Back'})
+CREATE (Kante: Player {Name: 'N'Golo Kante', DoB: '29-03-1991', position: 'Defensive Midfielder'})
+CREATE (Hazard: Player {Name: 'Eden Hazard', DoB: '07-01-1991', position: 'Winger'})
+CREATE (Alderweireld: Player {Name: 'Tobias Alderweireld', DoB: '02-03-1989', position: 'Defender'})
+CREATE (Rudiger: Player {Name: 'Antonio Rudiger', DoB: '03-03-1993', position: 'Defender'})
+CREATE (Kane: Player {Name: 'Harry Kane', DoB: '28-07-1993', position: 'Striker'})
+CREATE (Messi: Player {Name: 'Lionel Messi', DoB: '24-06-1987', position: 'Forward'})
+CREATE (Neymar: Player {Name: 'Neymar', DoB: '05-02-1992', position: 'Winger'})
+CREATE (Lloris: Player {Name: 'Hugo Lloris', DoB: '26-12-1986', position: 'Goalkeeper'})
+CREATE (Dembele: Player {Name: 'Mousa Dembele', DoB: '16-07-1987', position: 'Midfielder'})
+CREATE (Dembele: Player {Name: 'Ousmane Dembele', DoB: '15-05-1997', position: 'Winger'})
+
+
+CREATE (Monreal: Player {Name: 'Nacho Monreal', DoB: '26-02-1986', position: 'Defender'})
+CREATE (Ozil: Player {Name: 'Mesut Ozil', DoB: '15-10-1988', position: 'Attacking Midfielder'})
+CREATE (Ospina: Player {Name: 'David Ospina', DoB: '21-08-1988', position: 'Goalkeeper'})
+CREATE (Rafinha: Player {Name: 'Rafinha', DoB: '07-09-1985', position: 'Right Back'})
+CREATE (Thiago: Player {Name: 'Thiago', DoB: '11-04-1991', position: 'Midfielder'})
+CREATE (Muller: Player {Name: 'Thomas Muller', DoB: '13-09-1989', position: 'Attacker'})
+CREATE (Gotze: Player {Name: 'Mario Gotze', DoB: '03-06-1992', position: 'Attacker'})
+CREATE (Witsel: Player {Name: 'Axel Witsel', DoB: '12-01-1989', position: 'Defensive Midfielder'})
+CREATE (Montolivo: Player {Name: 'Riccardo Montolivo', DoB: '18-01-1985', position: 'Midfielder'})
+CREATE (Borini: Player {Name: 'Fabio Borini', DoB: '29-03-1991', position: 'Winger'})
+CREATE (Can: Player {Name: 'Emre Can', DoB: '12-01-1994', position: 'Defensive Midfielder'})
+CREATE (Costa: Player {Name: 'Douglas Costa', DoB: '14-09-1990', position: 'Winger'})
+CREATE (Dybala: Player {Name: 'Paulo Dybala', DoB: '15-11-1993', position: 'Forward'})
+CREATE (Khedira: Player {Name: 'Sami Khedira', DoB: '04-04-1987', position: 'Defensive Midfielder'})
+CREATE (Mandzukic: Player {Name: 'Mario Mandzukic', DoB: '21-05-1986', position: 'Striker'})
+CREATE (Chiellini: Player {Name: 'Giorgio Chiellini', DoB: '14-08-1984', position: 'Defender'})
+CREATE (Fontaine: Player {Name: 'Antoine Fontaine', DoB: '14-01-1993', position: 'Striker'})
+
+
+
+CREATE (Costa: Player {Name: 'Diego Costa', DoB: '07-10-1988', position: 'Striker'})
+CREATE (Luis: Player {Name: 'Filipe Luis', DoB: '09-08-1985', position: 'Left Back'})
+
+
+
+
+
+
+CREATE (: Player {Name: '', DoB: '', position: ''})
+
+
+
+WHERE THEY CURRENTLY PLAY
+Match (a:Player {Name:""}), (b:Football_Team {Team_Name:""}) Merge (a)-[r:Plays_For]->(b)
+
+
+
+COUNTRY THEY'RE FROM
+Match (a:Player {Name:"Paul Pogba"}), (b:Country {Title:"France"}) Merge (a)-[r:From]->(b)
+Match (a:Player {Name:"Kylian Mbappe"}), (b:Country {Title:"France"}) Merge (a)-[r:From]->(b)
+Match (a:Player {Name:"Jadon Sancho"}), (b:Country {Title:"England"}) Merge (a)-[r:From]->(b)
+Match (a:Player {Name:"Kevin De Bruyne"}), (b:Country {Title:"Belgium"}) Merge (a)-[r:From]->(b)
+
+Match (a:Player {Name:""}), (b:Country {Title:""}) Merge (a)-[r:From]->(b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+WHERE THEY HAVE PLAYED
+Match (a:Player {Name:"Paul Pogba"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:"Arturo Vidal"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:"Kevin De Bruyne"}), (b:League {Title:""}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+Match (a:Player {Name:""}), (b:League {Title:"Premier League"}) Merge (a)-[r:Played_In]->(b)
+
+
+
+CREATING TEAMS
+CREATE (ManUtd: Football_Team {City: 'Manchester', Team_Name: 'Manchester United', founded: '', Colour: 'Red'})
+CREATE (ManCity: Football_Team {City: 'Manchester', Team_Name: 'Manchester City', founded: '', Colour: 'Blue'})
+CREATE (Liverpool: Football_Team {City: 'Liverpool', Team_Name: 'Liverpool', founded: '', Colour: 'Red'})
+CREATE (RealMadrid: Football_Team {City: 'Madrid', Team_Name: 'Real Madrid', founded: '', Colour: 'White'})
+CREATE (BorussiaDortmund: Football_Team {City: '', Team_Name: 'Borussia Dortmund', founded: '', Colour: 'Yellow & Black'})
+CREATE (ParisSaint-Germain: Football_Team {City: 'Paris', Team_Name: 'PSG', founded: '', Colour: 'Blue'})
+CREATE (BayernMunchen: Football_Team {City: 'Munich', Team_Name: 'Bayern Munchen', founded: '', Colour: 'Red'})
+CREATE (ACMilan: Football_Team {City: 'Milan', Team_Name: 'AC Milan', founded: '', Colour: 'Red & Black'})
+CREATE (Internazionale: Football_Team {City: 'Milan', Team_Name: 'Internazionale', founded: '', Colour: 'Blue & Black'})
+
+
+
+
+
+LEAGUE TEAM PLAYS IN
+
+CREATE
+(a:Football_Team {Name:"Bayern Munchen"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"Borussia Dortmund"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"Manchester United"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"Liverpool"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"Manchester City"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"PSG"}), (b:League {Title:"Ligue 1"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"AC Milan"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Part_Of]->(b)
+(a:Football_Team {Name:"Internazionale"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Part_Of]->(b)
+
+
+
+Match (a:Football_Team {Team_Name:"Real Madrid"}), (b:League {Title:"La Liga"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Barcelona"}), (b:League {Title:"La Liga"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Arsenal"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Juventus"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Part_Of]->(b)
+
+
+
+
+
+
+(a:Football_Team {Name:""}), (b:League {Title:""}) Merge (a)-[r:Part_Of]->(b)
+
+
+CREATE
+	(BayernMunchen)-[r:Part_Of]->(Bundesliga),
+	(BorussiaDortmund)-[r:Part_Of]->(Bundesliga),
+	(ManUtd)-[r:Part_Of]->(PremierLeague),
+	(Liverpool)-[r:Part_Of]->(PremierLeague),
+	(ManCity)-[r:Part_Of]->(PremierLeague),
+	(ParisSaintGerman)-[r:Part_Of]->(Ligue1),
+	(ACMilan)-[r:Part_Of]->(SerieA),
+	(Internazionale)-[r:Part_Of]->(SerieA)
+(a:Football_Team {Name:""}), (b:League {Title:""}) Merge (a)-[r:Part_Of]->(b)
+
+
+
+
+
+
+
+
+
+
+
+Match (a:Football_Team {Team_Name:"Bayern Munchen"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Borussia Dortmund"}), (b:League {Title:"Bundesliga"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Manchester United"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Liverpool"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Manchester City"}), (b:League {Title:"Premier League"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"PSG"}), (b:League {Title:"Ligue 1"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"AC Milan"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Part_Of]->(b)
+Match (a:Football_Team {Team_Name:"Internazionale"}), (b:League {Title:"Serie A"}) Merge (a)-[r:Part_Of]->(b)
+
+
+Match (a:Football_Team {Team_Name:""}), (b:League {Title:""}) Merge (a)-[r:Part_Of]->(b)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
